@@ -128,6 +128,12 @@ The app is built for working on several things at once:
 - **Multiple windows** — **Cmd/Ctrl+Shift+N** opens a new window, and any session can be popped out via its context menu (**New window**) or from the command palette. A popped-out window renders that single chat without the global sidebar — handy for parking a long-running session on another monitor. Live agent output streams into every window showing the session.
 - **Panes** — **Cmd/Ctrl+B** toggles the left sidebar, **Cmd/Ctrl+J** the right one, and **Cmd/Ctrl+\\** swaps which side the sidebars sit on.
 
+#### Third-party titlebar buttons
+
+On Windows, utilities that add their own caption buttons can overlap Hermes' titlebar controls because Chromium reports only the native minimize, maximize, and close buttons. Open **Settings → Appearance → Window Layout → Third-Party Titlebar Buttons** and select the number of additional buttons to reserve space for.
+
+The default is **0**, so the titlebar is unchanged unless you enable the setting. The available values are **0–4**, and the reserved space follows the measured window-controls overlay so it remains proportional across display scaling and UI zoom levels.
+
 ### Terminal
 
 A real terminal lives in the right sidebar, next to the file browser:
